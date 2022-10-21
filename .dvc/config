@@ -1,4 +1,4 @@
 [core]
     remote = gokada-storage
 ['remote "gokada-storage"']
-    url = gdrive://1QCrcsWnQ8hU5l05pfSJ0pcpBA3PVpFSY
+    url = /home/jds98/10 Academy/Week-9/gokada-data
