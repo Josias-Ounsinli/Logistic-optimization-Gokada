@@ -1,0 +1,30 @@
+name: eda
+on: [push]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: iterative/setup-cml@v1
+      - name: Data Exploration
+        run: |
+         pip install Cython
+         pip install -r requirements.txt
+         python scripts/eda_script.py
+      - name: write to CML report
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+     #     echo "# Exploration report" >> explore_report.md
+     #     echo "## Some correlation" >> explore_report.md
+     #     cat reports/explore.txt >> explore_report.md
+                    
+     #     echo "## Data Visualization" >> explore_report.md
+     #     echo "#### Distribution of Promo in the train and the test set" >> explore_report.md
+     #     cml publish images/Promo_dist_in_train.png --md >> explore_report.md
+     #     cml publish images/Promo_dist_in_test.png --md >> explore_report.md
+     #     echo "#### Distribution of Sales on State Holidays" >> explore_report.md
+     #     cml publish images/'sales_vs_stateholiday.png' --md >> explore_report.md
+          
+     #     cml send-comment explore_report.md
