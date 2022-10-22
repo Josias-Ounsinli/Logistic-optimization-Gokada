@@ -8,7 +8,6 @@ import sys, os
 sys.path.append(os.path.abspath(os.path.join("../scripts")))
 
 import data_loader
-# import preprocess
 
 from logger_class import App_Logger
 app_logger = App_Logger("../logs/tests.log").get_app_logger()
