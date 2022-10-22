@@ -6,7 +6,7 @@ app_logger = App_Logger("../logs/load_data.log").get_app_logger()
 
 
 def load_data(path: str):
-    global df
+    df = pd.read_csv(path)
     try:
         df = pd.read_csv(path)
     except BaseException:
