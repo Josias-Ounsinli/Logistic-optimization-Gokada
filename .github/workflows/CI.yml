@@ -22,6 +22,6 @@ jobs:
         run: pip install -r requirements.txt
       # TODO: test go here
       - name: Run
-        run: python -m unittest tests/test_df.py
+        run: cd tests && python -m unittest test_df.py
       # TODO: test end here
       - run: echo "🍏 This job's status is ${{ job.status }}."
