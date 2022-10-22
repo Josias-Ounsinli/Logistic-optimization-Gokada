@@ -1,3 +1,4 @@
 data/non-disclosure-agreement.docx
 env/
 scripts/__pycache__
+tests/__pycache__
