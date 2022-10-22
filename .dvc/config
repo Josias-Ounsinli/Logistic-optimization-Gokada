@@ -1,0 +1,4 @@
+[core]
+    remote = gokada-storage
+['remote "gokada-storage"']
+    url = /home/jds98/10 Academy/Week-9/gokada-data
