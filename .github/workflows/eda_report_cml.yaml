@@ -15,7 +15,7 @@ jobs:
       - name: write to CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
+     #   run: |
      #     echo "# Exploration report" >> explore_report.md
      #     echo "## Some correlation" >> explore_report.md
      #     cat reports/explore.txt >> explore_report.md
